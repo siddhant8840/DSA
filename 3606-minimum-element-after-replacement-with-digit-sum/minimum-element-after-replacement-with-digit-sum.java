@@ -1,6 +1,6 @@
 class Solution {
     public int minElement(int[] nums) {
-        int min = 128; // max digit sum of int is 9*10=90, so 128 > any possible sum
+        int min = 128;
         for (int n : nums) {
             int s = 0;
             for (; n > 0; n /= 10) s += n % 10;
