@@ -11,7 +11,7 @@
 
 <br><br>
 <p align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=siddhant8840&theme=tokyonight&utcOffset=5.5"/>
+  <img src="./pic.png" alt="Siddhant Srivastava" width="250">
 </p>
 
 <br><br>
