@@ -10,9 +10,13 @@
 <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="350"/>
 
 <br><br>
+<br><br>
+
 <p align="center">
   <img src="./pic.png" alt="Siddhant Srivastava" width="250">
 </p>
+
+<br><br>
 
 <br><br>
 
