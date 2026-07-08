@@ -11,7 +11,7 @@
 
 <br><br>
 <p align="center">
-  <img src="https://media.tenor.com/S59bPkT0pqcAAAAC/programming.gif" width="450"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=siddhant8840&theme=tokyonight&utcOffset=5.5"/>
 </p>
 
 <br><br>
