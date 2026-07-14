@@ -1,24 +1,22 @@
 class Solution {
     public List<Integer> findAnagrams(String s, String p) {
-
-
-        ArrayList<Integer> list =new ArrayList<>();
-        char ps[]=p.toCharArray();
-        Arrays.sort(ps);
-        for (int i =0;i<=s.length()-p.length();i++){
-            String ss =s.substring(i,i+p.length());
-            char sa[]=ss.toCharArray();
-
-            Arrays.sort(sa);
-            if(Arrays.equals(sa,ps)) list.add(i);
-
-        
-          
-
-            
+        List<Integer> result=new ArrayList<>();
+        if(p.length()>s.length())
+            return result;
+        int[] f1=new int[26];
+        int[] f2=new int[26];
+        for(int i=0;i<p.length();i++){
+            f1[s.charAt(i)-'a']++;
+            f2[p.charAt(i)-'a']++;
         }
-        return list;
-        
-        
+        if(Arrays.equals(f1,f2))
+            result.add(0);
+        for(int i=p.length();i<s.length();i++){
+            f1[s.charAt(i)-'a']++;
+            f1[s.charAt(i-p.length())-'a']--;
+            if(Arrays.equals(f1,f2))
+                result.add(i-p.length()+1);
+        }
+        return result;
     }
 }
