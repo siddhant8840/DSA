@@ -6,8 +6,16 @@ class Solution {
         int j = num2.length() - 1;
 
         while (i >= 0 || j >= 0 || carry != 0) {
-            int digit1 = (i >= 0) ? num1.charAt(i) - '0' : 0;
-            int digit2 = (j >= 0) ? num2.charAt(j) - '0' : 0;
+            int digit1 = 0;
+            int digit2 = 0;
+
+            // Replace ternary with standard if blocks
+            if (i >= 0) {
+                digit1 = num1.charAt(i) - '0';
+            }
+            if (j >= 0) {
+                digit2 = num2.charAt(j) - '0';
+            }
 
             int total = digit1 + digit2 + carry;
             carry = total / 10;
