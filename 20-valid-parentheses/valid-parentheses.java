@@ -1,21 +1,21 @@
 class Solution {
     public boolean isValid(String s) {
-        Deque<Character> st =new ArrayDeque<>();
+        HashMap<Character,Character> map=new HashMap<>();
+        map.put('(',')');
+          map.put('{','}');
+            map.put('[',']');
+        Stack<Character> st =new Stack<>();
         for(int i=0;i<s.length();i++){
-            char x=s.charAt(i);
-         if (x=='('||x=='['||x=='{')
-         st.push(x);
-         else{
-         if (st.isEmpty()==true) return false;
-         char top=st.pop();
-          if(x==')'&& top!='('||x=='}'&& top!='{'||x==']'&& top!='[')
-         return false;
-         }
-         
+            char c =s.charAt(i);
+            if(map.containsKey(c)) st.push(c);
+            else{
+               if (st.isEmpty()) return false;
+               if(map.get(st.pop())!=c) return false;
 
+            }
         }
         return st.isEmpty();
-
+        
 
         
     }
