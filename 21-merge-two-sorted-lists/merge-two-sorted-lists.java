@@ -19,7 +19,7 @@ class Solution {
             arr.add(l2.val);
             l2=l2.next;}
         Collections.sort(arr);
-        ListNode dumm=new ListNode(-1);
+        ListNode dumm=new ListNode(-9999);
         ListNode curr=dumm;
         dumm.next=null;
         for(int i=0;i<arr.size();i++){
