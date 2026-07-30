@@ -12,7 +12,7 @@ class Solution {
                
             }
             set.add(c);
-             ml=Math.max(ml,r-l+1);
+             ml=Math.max(ml,set.size());
             
             
         }
